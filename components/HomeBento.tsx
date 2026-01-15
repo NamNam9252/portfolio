@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 // Helper for Tailwind class merging
-const cn = (...classes) => classes.filter(Boolean).join(" ");
+const cn = (...classes: (string | undefined | null | false)[]) => classes.filter(Boolean).join(" ");
 
 // Custom SVG Icons for the MERN stack + Python/C
 const MongoLogo = () => (
@@ -321,7 +321,14 @@ const HomeBento = () => {
   );
 };
 
-const SocialItem = ({ icon, label, href, color }) => (
+interface SocialItemProps {
+  icon: React.ReactNode;
+  label: string;
+  href: string;
+  color: string;
+}
+
+const SocialItem = ({ icon, label, href, color }: SocialItemProps) => (
   <a 
     href={href} 
     className="flex items-center gap-3 p-2 rounded-xl hover:bg-neutral-100 dark:hover:bg-white/5 transition-all duration-300 group/item"
@@ -342,7 +349,14 @@ const GlassOverlay = () => (
   <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0" />
 );
 
-const ServiceCard = ({ icon, title, desc, tag }) => (
+interface ServiceCardProps {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+  tag: string;
+}
+
+const ServiceCard = ({ icon, title, desc, tag }: ServiceCardProps) => (
   <div className="group bg-white dark:bg-[#111] p-8 rounded-[2rem] border border-neutral-200 dark:border-white/5 hover:bg-neutral-50 dark:hover:bg-[#161616] hover:border-purple-500/20 transition-all duration-500 flex flex-col h-full relative overflow-hidden shadow-sm dark:shadow-none">
     <GlassOverlay />
     <div className="mb-8 flex justify-between items-start relative z-10">
@@ -364,7 +378,12 @@ const ServiceCard = ({ icon, title, desc, tag }) => (
   </div>
 );
 
-const AccordionItem = ({ question, answer }) => {
+interface AccordionItemProps {
+  question: string;
+  answer: string;
+}
+
+const AccordionItem = ({ question, answer }: AccordionItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={cn(
