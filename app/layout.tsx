@@ -37,11 +37,6 @@ const notoSerif = Noto_Serif({
 export const metadata: Metadata = {
   title: "Nazyx | Portfolio",
   description: "Portfolio of Nazyx - Web Developer",
-  icons: {
-    icon: "/logo/logo.png",
-    shortcut: "/logo/logo.png",
-    apple: "/logo/logo.png",
-  },
 };
 
 export default function RootLayout({
