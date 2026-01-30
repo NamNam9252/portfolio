@@ -257,7 +257,7 @@ export default function Home() {
         {/* Crowd Canvas Animation - Overlaps buttons slightly due to height/positioning */}
         <div className="absolute bottom-0 w-full h-[700px] z-0 pointer-events-none">
            <CrowdCanvas 
-            basePath="/me/bust"
+            basePath="/me/Bust"
             peepCount={105}
             maxCrowd={70}
             peepSize={270}

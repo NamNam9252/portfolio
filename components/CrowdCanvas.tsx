@@ -11,7 +11,7 @@ interface CrowdCanvasProps {
 }
 
 const CrowdCanvas = ({ 
-  basePath = "/me/bust", 
+  basePath = "/me/Bust", 
   peepCount = 105,
   maxCrowd = 20,
   peepSize = 120
