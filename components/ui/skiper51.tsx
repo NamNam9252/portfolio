@@ -114,12 +114,34 @@ const Carousel_005 = ({
   }
 
   .Carousal_005 .swiper-pagination-bullet {
-    background-color: var(--foreground, #000) !important;
-    opacity: 0.3;
+    background-color: #525252 !important; /* neutral-600 */
+    opacity: 0.5;
+    transition: all 0.3s ease;
   }
   .Carousal_005 .swiper-pagination-bullet-active {
-    background-color: var(--primary, #000) !important;
+    background-color: #9333ea !important; /* purple-600 */
     opacity: 1;
+    width: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Dark mode overrides - assuming 'dark' class on a parent/html */
+  .dark .Carousal_005 .swiper-pagination-bullet {
+    background-color: #d4d4d4 !important; /* neutral-300 */
+    opacity: 0.5;
+  }
+  .dark .Carousal_005 .swiper-pagination-bullet-active {
+    background-color: #c084fc !important; /* purple-400 */
+    opacity: 1;
+  }
+
+  /* Hide scrollbars */
+  .Carousal_005::-webkit-scrollbar {
+    display: none;
+  }
+  .Carousal_005 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   `;
 

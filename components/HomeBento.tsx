@@ -51,6 +51,8 @@ const CLogo = () => (
 
 import { Tooltip } from "@/components/ui/tooltip-card";
 import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiC, SiOpenai, SiPrisma, SiNextdotjs } from "react-icons/si";
+import { Skiper51 } from "@/components/ui/skiper51";
+import { projects } from "@/constants/projects";
 
 const HomeBento = () => {
   const skills = [
@@ -278,6 +280,20 @@ const HomeBento = () => {
                 </motion.div>
               </Tooltip>
             ))}
+          </div>
+        </div>
+
+    {/* --- WORK SLIDES SECTION --- */}
+        <div className="space-y-12">
+          <div className="flex items-center gap-4">
+            <div className="h-px flex-grow bg-neutral-200 dark:bg-white/5" />
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-center whitespace-nowrap uppercase text-neutral-900 dark:text-white">
+              My <span className="text-purple-500 dark:text-purple-400">Works</span>
+            </h2>
+            <div className="h-px flex-grow bg-neutral-200 dark:bg-white/5" />
+          </div>
+          <div className="w-full">
+            <Skiper51 data={projects} />
           </div>
         </div>
 
