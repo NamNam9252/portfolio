@@ -225,7 +225,7 @@ export default function AboutPage() {
                   onClick={() => setShowResume(true)}
                   className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-8 py-3 text-lg font-medium"
                 >
-                  <span>View Resume</span>
+                  <span>View Resumé</span>
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </HoverBorderGradient>
             </div>
@@ -233,7 +233,7 @@ export default function AboutPage() {
             <ResumeModal 
               isOpen={showResume} 
               onClose={() => setShowResume(false)} 
-              pdfUrl="/resume/resume.pdf" 
+              pdfUrl="/resume/resume1.pdf" 
             />
         </div>
         </div>
