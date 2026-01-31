@@ -177,7 +177,7 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-2 md:gap-3 text-2xl md:text-4xl text-neutral-800 dark:text-neutral-200 font-[family-name:var(--font-noto-serif)]">
-              <span>Myself</span>
+              <span>I</span>
               <RotatingText
                 texts={['Naman Goyal_', 'Nazyx--', 'Namnam.', 'Coder !']}
                 mainClassName="px-2 sm:px-2 md:px-3 bg-transparent text-neutral-900 dark:text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-2xl md:text-4xl font-[family-name:var(--font-noto-serif)] italic "
