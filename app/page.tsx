@@ -227,7 +227,7 @@ export default function Home() {
         {/* CTA Content */}
         <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl">
           <h2 className="text-4xl md:text-6xl font-[family-name:var(--font-noto-serif)] italic font-bold text-neutral-900 dark:text-white mb-10 leading-tight drop-shadow-sm">
-            This is the Sign to get out of this crowd join me to be the change.
+            This is the Sign to get out of this crowd and join me to be the change.
           </h2>
           
           <div className="flex flex-wrap justify-center gap-6">

@@ -131,7 +131,7 @@ export const projects = [
     category: "HealthTech (MERN + Flutter)",
     title: "CarePlus: Smart Health Ecosystem",
     description: "A hybrid platform connecting patients with clinics. Features clinic route finding, online consultation, and live appointment queue tracking.",
-    date: "Coming Soon",
+    date: "Feb 2026",
     imageSrc: "/images/projects/careplus.png",
     imageAlt: "CarePlus App",
     link: "https://careplus-woad.vercel.app/"
