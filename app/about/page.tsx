@@ -233,7 +233,7 @@ export default function AboutPage() {
             <ResumeModal 
               isOpen={showResume} 
               onClose={() => setShowResume(false)} 
-              pdfUrl="/resume/resume1.pdf" 
+              pdfUrl="/resume/naman.pdf" 
             />
         </div>
         </div>
